@@ -1,0 +1,92 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 250px;
+    background: #333;
+    width: 800px;
+    border-radius: 15px;
+    padding: 0 20px;
+}
+
+.quote{
+    padding: 60px 110px;
+    align-items: center;
+    color: white;
+    font-size: 32px;
+    text-align: center;
+}
+
+.line{
+    width: 680px;
+    height: 1.5px;
+    background: white;
+}
+
+.bottom{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 0px;
+}
+
+.author{
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.icons{
+    display: flex;
+    float: right;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.icons button{
+    cursor: pointer;
+    height: 36px;
+    border-radius: 5px;
+    border: none;
+}
+
+button{
+    font-size: 15px;
+    background: dodgerblue;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .container {
+      width: 90%; /* Adjusting width for smaller screens */
+      margin-top: 150px; /* Modifying top margin for smaller screens */
+    }
+  
+    .quote {
+      padding: 40px 20px; /* Adjusted padding for smaller screens */
+      font-size: 24px; /* Decreased font size for smaller screens */
+    }
+  
+    .line {
+      width: 100%; /* Full width for smaller screens */
+    }
+  
+    .bottom {
+      flex-direction: column; /* Change to column layout for smaller screens */
+      margin: 20px 0; /* Adjusted margin for smaller screens */
+    }
+  
+    .author {
+      text-align: center; /* Centered text for smaller screens */
+    }
+  
+    .icons {
+      justify-content: center; /* Centered icons for smaller screens */
+      margin: 10px 0; /* Adjusted margin for smaller screens */
+    }
+    
+    .icons button {
+      margin: 0 5px; /* Adjusted button margin for smaller screens */
+    }
+  }
